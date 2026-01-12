@@ -59,3 +59,6 @@ Inside the `set_mode()` function, there are commented-out lines for workspace ga
 ## Similar projects
 
 - [linux-extend-screen](https://github.com/santiagofdezg/linux-extend-screen) : Do give a read it inspired me to write this script, it's very detailed. You should reference this for stuff like wireless connection etc.
+
+| </a> <img src="https://count.getloli.com/get/@p0bo?theme=booru-helltaker" alt=":name" /> |
+| ---------------------------------------------------------------------------------------- |
