@@ -6,7 +6,7 @@ A Bash script that turns your Android device into a second monitor for Hyprland 
 
 **On your PC (Linux):**
 
-- **Hyprland** (v0.35+ recommended)
+- **Hyprland** (Tested on v0.53)
 - **adb** (part of `android-tools`)
 - **wayvnc**
 - **jq**
