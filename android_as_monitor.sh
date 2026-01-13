@@ -32,15 +32,15 @@ check_mode() {
 }
 
 set_mode() {
+    hyprctl --batch "\
+        keyword monitor $MONITOR,$MONITOR_MODE,$MONITOR_POS,$MONITOR_SCALE;" \
+        >/dev/null
 
-    local options="keyword monitor $MONITOR,$MONITOR_MODE,$MONITOR_POS,$MONITOR_SCALE"
-
-    # extra options 
-    #options+=" ; keyword workspace r[4-6], monitor:$MONITOR, gapsout:9"
-    #options+=" ; keyword windowrule rounding 20, match:workspace r[4-6]"
-
-    hyprctl --batch "$cmd" \
-      >/dev/null
+    #hyprctl --batch "\
+    #    keyword monitor $MONITOR,$MONITOR_MODE,$MONITOR_POS,$MONITOR_SCALE; \
+    #    keyword workspace r[4-6], monitor:$MONITOR, gapsout:9; \
+    #    keyword windowrule rounding 20, match:workspace r[4-6];" \
+    #    >/dev/null
 }
 
 if ! check_mode; then
